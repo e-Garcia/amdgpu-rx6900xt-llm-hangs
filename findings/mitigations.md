@@ -4,8 +4,8 @@ Each is tested alone, re-running `repro/` with `--n-cpu-moe 8` at 136K.
 
 | # | Mitigation | How | Status |
 |---|---|---|---|
-| 1 | Pin clocks (no DPM transitions) | `echo high > /sys/class/drm/cardN/device/power_dpm_force_performance_level` | untested |
-| 2 | Disable GFXOFF | boot param `amdgpu.ppfeaturemask=0xffff7fff` (`amdgpu.gfx_off` is not a param on 6.8). Others report `0xfff73fff` | untested |
+| 1 | Pin clocks (no DPM transitions) | `echo high > /sys/class/drm/cardN/device/power_dpm_force_performance_level` | **failed** (incident 4: hung at 67K; GFXOFF still active) |
+| 2 | Disable GFXOFF | boot param `amdgpu.ppfeaturemask=0xffff7fff` (`amdgpu.gfx_off` is not a param on 6.8). Others report `0xfff73fff`. Here: `options amdgpu ppfeaturemask=0xffff7fff` in modprobe.d (keeps overdrive bit `0x4000`) + initramfs rebuild | **next** (incident 4 points at AllowGfxOff) |
 | 3 | Match SMU interface | newer kernel (Ubuntu HWE 6.11+/6.14+) | untested |
 | 4 | ASPM off | `pcie_aspm=off amdgpu.aspm=0` | untested |
 | 5 | Stop userspace SMU polling during inference | pause `rocm-smi`/metrics pollers | untested |

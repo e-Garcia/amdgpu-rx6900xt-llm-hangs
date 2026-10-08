@@ -1,0 +1,11 @@
+2026-10-08T15:33:26-04:00 <redacted> mitig1[20401]: 15:33:26 pl=high sclk=2500Mhz mclk=1000Mhz W=118 T=49C busy=79%
+2026-10-08T15:33:31-04:00 <redacted> mitig1[20436]: 15:33:31 pl=high sclk=2500Mhz mclk=1000Mhz W=174 T=61C busy=94%
+2026-10-08T15:33:41-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SMU: I'm not done with your previous command: SMN_C2PMSG_66:0x00000028 SMN_C2PMSG_82:0x00000000
+2026-10-08T15:33:41-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Failed to enable gfxoff!
+2026-10-08T15:33:44-04:00 <redacted> systemd[2080]: Starting kuma-heartbeat.service - Uptime Kuma heartbeat push...
+2026-10-08T15:33:44-04:00 <redacted> heartbeat-push.sh[20491]: heartbeat-push.sh: push failed for 'host'
+2026-10-08T15:33:44-04:00 <redacted> systemd[2080]: Finished kuma-heartbeat.service - Uptime Kuma heartbeat push.
+2026-10-08T15:33:48-04:00 <redacted> appimagelauncherd[2345]: Directory /Applications does not exist, skipping
+2026-10-08T15:33:49-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SMU: I'm not done with your previous command: SMN_C2PMSG_66:0x00000028 SMN_C2PMSG_82:0x00000000
+2026-10-08T15:33:49-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Failed to export SMU metrics table!
+2026-10-08T15:33:54-04:00 <redacted> geoclue[4778]: Failed to query location: Query location SOUP error: Not Found

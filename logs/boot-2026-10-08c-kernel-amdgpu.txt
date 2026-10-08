@@ -1,0 +1,106 @@
+2026-10-08T15:04:41-04:00 <redacted> kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0-138-generic root=UUID=<uuid> ro amdgpu.noretry=0 amdgpu.runpm=0 quiet splash amd_iommu=on iommu=pt pcie_acs_override=downstream,multifunction vt.handoff=7
+2026-10-08T15:04:41-04:00 <redacted> kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0-138-generic root=UUID=<uuid> ro amdgpu.noretry=0 amdgpu.runpm=0 quiet splash amd_iommu=on iommu=pt pcie_acs_override=downstream,multifunction vt.handoff=7
+2026-10-08T15:04:41-04:00 <redacted> kernel: ACPI: bus type drm_connector registered
+2026-10-08T15:04:41-04:00 <redacted> kernel: [drm] Initialized simpledrm 1.0.0 20200625 for simple-framebuffer.0 on minor 0
+2026-10-08T15:04:41-04:00 <redacted> kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+2026-10-08T15:04:41-04:00 <redacted> kernel: evm: security.SMACK64TRANSMUTE
+2026-10-08T15:04:41-04:00 <redacted> systemd[1]: Starting <email> - Load Kernel Module drm...
+2026-10-08T15:04:41-04:00 <redacted> systemd[1]: <email>: Deactivated successfully.
+2026-10-08T15:04:41-04:00 <redacted> systemd[1]: Finished <email> - Load Kernel Module drm.
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu: vga_switcheroo: detected switching method \_SB_.PCI0.GPP8.SWUS.SWDS.VGA_.ATPX handle
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu: ATPX version 1, functions 0x00000000
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu: Virtual CRAT table created for CPU
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu: Topology: Add CPU node
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] initializing kernel modesetting (SIENNA_CICHLID 0x1002:0x73BF 0x1043:0x04F8 0xC0).
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] register mmio base: 0xFC800000
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] register mmio size: 1048576
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 0 <nv_common>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 1 <gmc_v10_0>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 2 <navi10_ih>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 3 <psp>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 4 <smu>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 5 <dm>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 6 <gfx_v10_0>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 7 <sdma_v5_2>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 8 <vcn_v3_0>
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] add ip block number 9 <jpeg_v3_0>
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: No more image in the PCI ROM
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Fetched VBIOS from ROM BAR
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu: ATOM BIOS: 115-D412BS2-100
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] VCN(0) decode is enabled in VM mode
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] VCN(1) decode is enabled in VM mode
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] VCN(0) encode is enabled in VM mode
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] VCN(1) encode is enabled in VM mode
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] JPEG decode is enabled in VM mode
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: vgaarb: deactivate vga console
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Trusted Memory Zone (TMZ) feature disabled as experimental (default)
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: MEM ECC is not presented.
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SRAM ECC is not presented.
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: VRAM: 16368M 0x0000008000000000 - 0x00000083FEFFFFFF (16368M used)
+2026-10-08T15:04:44-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: GART: 512M 0x0000000000000000 - 0x000000001FFFFFFF
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] Detected VRAM RAM=16368M, BAR=256M
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] RAM width 256bits GDDR6
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] amdgpu: 16368M of VRAM memory ready
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] amdgpu: 48231M of GTT memory ready.
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] GART: num cpu pages 131072, num gpu pages 131072
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] PCIE GART of 512M enabled (table at 0x0000008000400000).
+2026-10-08T15:04:44-04:00 <redacted> kernel: [drm] [nvidia-drm] [GPU ID 0x00000400] Loading driver
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: STB initialized to 2048 entries
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] Loading DMUB firmware via PSP: version=0x02020020
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] use_doorbell being set to: [true]
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] use_doorbell being set to: [true]
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] use_doorbell being set to: [true]
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] use_doorbell being set to: [true]
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] Found VCN firmware Version ENC: 1.30 DEC: 3 VEP: 0 Revision: 4
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Will use PSP to load VCN firmware
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: reserve 0xa00000 from 0x83fd000000 for PSP TMR
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SECUREDISPLAY: securedisplay ta ucode is not available
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: smu driver if version = 0x00000040, smu fw if version = 0x00000041, smu fw program = 0, version = 0x003a5900 (58.89.0)
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: use vbios provided pptable
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SMU is initialized successfully!
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] Display Core v3.2.266 initialized on DCN 3.0
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] DP-HDMI FRL PCON supported
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] DMUB hardware initialized: version=0x02020020
+2026-10-08T15:04:46-04:00 <redacted> kernel: snd_hda_intel 0000:09:00.1: bound 0000:09:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] kiq ring mec 2 pipe 1 q 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] VCN decode and encode initialized successfully(under DPG Mode).
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] JPEG decode initialized successfully.
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu: HMM registered 16368MB device memory
+2026-10-08T15:04:46-04:00 <redacted> kernel: kfd kfd: amdgpu: Allocated 3969056 bytes on gart
+2026-10-08T15:04:46-04:00 <redacted> kernel: kfd kfd: amdgpu: Total number of KFD nodes to be created: 1
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu: Virtual CRAT table created for GPU
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu: Topology: Add dGPU node [0x73bf:0x1002]
+2026-10-08T15:04:46-04:00 <redacted> kernel: kfd kfd: amdgpu: added device 1002:73bf
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SE 4, SH per SE 2, CU per SH 10, active_cu_number 80
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 5 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 6 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 7 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 8 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 9 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 10 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring kiq_0.2.1.0 uses VM inv eng 11 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring sdma0 uses VM inv eng 12 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring sdma1 uses VM inv eng 13 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring sdma2 uses VM inv eng 14 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring sdma3 uses VM inv eng 15 on hub 0
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring vcn_dec_0 uses VM inv eng 0 on hub 8
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring vcn_enc_0.0 uses VM inv eng 1 on hub 8
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring vcn_enc_0.1 uses VM inv eng 4 on hub 8
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring vcn_dec_1 uses VM inv eng 5 on hub 8
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring vcn_enc_1.0 uses VM inv eng 6 on hub 8
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring vcn_enc_1.1 uses VM inv eng 7 on hub 8
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: ring jpeg_dec uses VM inv eng 8 on hub 8
+2026-10-08T15:04:46-04:00 <redacted> kernel: [drm] Initialized amdgpu 3.57.0 20150101 for 0000:09:00.0 on minor 1
+2026-10-08T15:04:46-04:00 <redacted> kernel: fbcon: amdgpudrmfb (fb0) is primary device
+2026-10-08T15:04:46-04:00 <redacted> kernel: amdgpu 0000:09:00.0: [drm] fb0: amdgpudrmfb frame buffer device
+2026-10-08T15:04:47-04:00 <redacted> kernel: [drm] DSC precompute is not needed.
+2026-10-08T15:04:47-04:00 <redacted> kernel: [drm] Initialized nvidia-drm 0.0.0 20160202 for 0000:04:00.0 on minor 2
+2026-10-08T15:04:47-04:00 <redacted> kernel: nvidia 0000:04:00.0: [drm] fb1: nvidia-drmdrmfb frame buffer device
+2026-10-08T15:33:41-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SMU: I'm not done with your previous command: SMN_C2PMSG_66:0x00000028 SMN_C2PMSG_82:0x00000000
+2026-10-08T15:33:41-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Failed to enable gfxoff!
+2026-10-08T15:33:49-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SMU: I'm not done with your previous command: SMN_C2PMSG_66:0x00000028 SMN_C2PMSG_82:0x00000000
+2026-10-08T15:33:49-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Failed to export SMU metrics table!

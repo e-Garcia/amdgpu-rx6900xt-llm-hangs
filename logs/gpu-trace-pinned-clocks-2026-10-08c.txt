@@ -1,0 +1,33 @@
+# 5-s samples from sysfs (pp_dpm_sclk/mclk active level, hwmon power1_average W, temp2 junction C, gpu_busy_percent).
+# power_dpm_force_performance_level=high. "sclk=0Mhz (gfxoff)" = GFX block powered down while idle. Last sample 15:33:31; SMU error 15:33:41.
+2026-10-08 15:30:57 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=29 T=37C busy=0%
+2026-10-08 15:31:03 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=29 T=37C busy=0%
+2026-10-08 15:31:08 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=38C busy=0%
+2026-10-08 15:31:13 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=37C busy=0%
+2026-10-08 15:31:18 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=37C busy=0%
+2026-10-08 15:31:23 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=37C busy=0%
+2026-10-08 15:31:28 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=38C busy=0%
+2026-10-08 15:31:33 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=37C busy=0%
+2026-10-08 15:31:38 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=38C busy=0%
+2026-10-08 15:31:43 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=38C busy=0%
+2026-10-08 15:31:48 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=30 T=38C busy=0%
+2026-10-08 15:31:53 pl=high sclk=2500Mhz mclk=1000Mhz W=28 T=38C busy=2%
+2026-10-08 15:31:58 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=28 T=38C busy=12%
+2026-10-08 15:32:03 pl=high sclk=0Mhz (gfxoff) mclk=1000Mhz W=32 T=40C busy=0%
+2026-10-08 15:32:08 pl=high sclk=2500Mhz mclk=1000Mhz W=193 T=57C busy=92%
+2026-10-08 15:32:13 pl=high sclk=2500Mhz mclk=1000Mhz W=110 T=45C busy=86%
+2026-10-08 15:32:18 pl=high sclk=2500Mhz mclk=1000Mhz W=109 T=44C busy=80%
+2026-10-08 15:32:23 pl=high sclk=2500Mhz mclk=1000Mhz W=116 T=45C busy=60%
+2026-10-08 15:32:28 pl=high sclk=2500Mhz mclk=1000Mhz W=114 T=46C busy=38%
+2026-10-08 15:32:33 pl=high sclk=2500Mhz mclk=1000Mhz W=118 T=47C busy=44%
+2026-10-08 15:32:38 pl=high sclk=2500Mhz mclk=1000Mhz W=88 T=45C busy=79%
+2026-10-08 15:32:44 pl=high sclk=2500Mhz mclk=1000Mhz W=115 T=47C busy=81%
+2026-10-08 15:32:49 pl=high sclk=2500Mhz mclk=1000Mhz W=128 T=49C busy=46%
+2026-10-08 15:32:55 pl=high sclk=2500Mhz mclk=1000Mhz W=120 T=48C busy=90%
+2026-10-08 15:33:00 pl=high sclk=2500Mhz mclk=1000Mhz W=117 T=49C busy=83%
+2026-10-08 15:33:05 pl=high sclk=2500Mhz mclk=1000Mhz W=112 T=48C busy=59%
+2026-10-08 15:33:10 pl=high sclk=2500Mhz mclk=1000Mhz W=118 T=49C busy=39%
+2026-10-08 15:33:15 pl=high sclk=2500Mhz mclk=1000Mhz W=118 T=49C busy=60%
+2026-10-08 15:33:20 pl=high sclk=2500Mhz mclk=1000Mhz W=51 T=47C busy=26%
+2026-10-08 15:33:26 pl=high sclk=2500Mhz mclk=1000Mhz W=118 T=49C busy=79%
+2026-10-08 15:33:31 pl=high sclk=2500Mhz mclk=1000Mhz W=174 T=61C busy=94%
