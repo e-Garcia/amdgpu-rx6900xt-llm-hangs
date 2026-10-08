@@ -43,6 +43,12 @@ Details in [findings/pattern.md](findings/pattern.md).
 | [tools/](tools/) | `redact.sh` and `pii-check.sh`. Every log is passed through redaction, and CI runs the check |
 | [PRIVACY.md](PRIVACY.md) | What may and may not be committed |
 
+## Current best workaround
+
+Add **`--no-op-offload`** to llama-server whenever you use `--n-cpu-moe` / `-ot` CPU offload on this card. With it, the
+same config read 485K+ tokens of fresh long prompts without a hang (soak ongoing), against 5/5 hangs without it, at
+about half the prompt-read speed. Details: [findings/no-op-offload.md](findings/no-op-offload.md).
+
 ## If you have a Navi 21 card
 
 Run `repro/collect-env.sh` and open an issue with its output. Try `repro/` with and without `--n-cpu-moe`.

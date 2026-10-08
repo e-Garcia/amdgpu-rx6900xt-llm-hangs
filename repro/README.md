@@ -15,6 +15,7 @@ capture first (see `../findings/mitigations.md`).
    ```
    It writes `repro/results/*.jsonl` (gitignored). It needs `pip install pillow`.
 4. **Control:** the same with `repro/serve.sh 204800 0` (no CPU offload). It has never hung on our host.
+5. **Workaround check:** `repro/serve.sh 204800 8 --no-op-offload`. No hang so far on our host (see `../findings/no-op-offload.md`).
 
 The test checks recall, corrected facts, distractors, hallucination and vision at each size, and prints
 prompt-read and generation speed.
