@@ -25,6 +25,7 @@ At every boot: `smu driver if version = 0x00000040, smu fw if version = 0x000000
 | 2 | 2026-10-08 11:05 | Qwen3.6-35B-A3B Q2 + vision, `--n-cpu-moe 8` | 67K-prompt request (no SMU line captured) |
 | 3 | 2026-10-08 12:13 | same as #2, clean boot | ~90K of 136K |
 | 4 | 2026-10-08 15:33 | same, clocks pinned `high`; first stuck SMU msg `0x28` AllowGfxOff | early in a 67K prompt |
+| 5 | 2026-10-08 16:36 | same, GFXOFF disabled (`ppfeaturemask=0xffff7fff`); silent, no SMU line | ~105K of 172K, after ~330K offloaded tokens passed |
 
 **Never hung:** dozens of long prompts read **fully on the GPU** (no `--n-cpu-moe`), up to 198K tokens
 (Qwen3.6) and 247K (Bonsai 27B), the same day, on the same host and driver. Short offloaded requests were also fine.

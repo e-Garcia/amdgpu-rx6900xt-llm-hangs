@@ -1,0 +1,3 @@
+2026-10-08T16:36:13-04:00 <redacted> appimagelauncherd[2193]: Directory /Applications does not exist, skipping
+2026-10-08T16:36:43-04:00 <redacted> appimagelauncherd[2193]: Directory /Applications does not exist, skipping
+(no kernel/amdgpu line before the reset; tailscaled lines removed for privacy)

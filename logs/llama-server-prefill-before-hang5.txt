@@ -1,0 +1,6 @@
+I slot print_timing: id  0 | task 5602 | prompt processing, n_tokens =  94432, progress = 0.55, t = 108.42 s / 871.01 tokens per second
+I slot print_timing: id  0 | task 5602 | prompt processing, n_tokens =  96480, progress = 0.56, t = 111.80 s / 862.98 tokens per second
+I slot print_timing: id  0 | task 5602 | prompt processing, n_tokens =  98528, progress = 0.57, t = 115.22 s / 855.12 tokens per second
+I slot print_timing: id  0 | task 5602 | prompt processing, n_tokens = 100576, progress = 0.58, t = 118.69 s / 847.36 tokens per second
+I slot print_timing: id  0 | task 5602 | prompt processing, n_tokens = 102624, progress = 0.59, t = 122.21 s / 839.75 tokens per second
+I slot print_timing: id  0 | task 5602 | prompt processing, n_tokens = 104672, progress = 0.61, t = 125.77 s / 832.27 tokens per second
