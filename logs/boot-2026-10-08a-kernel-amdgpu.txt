@@ -1,0 +1,17 @@
+2026-10-07T10:36:39-04:00 <redacted> kernel: evm: security.SMACK64TRANSMUTE
+2026-10-07T10:36:41-04:00 <redacted> kernel: amdgpu: ATPX version 1, functions 0x00000000
+2026-10-07T10:36:41-04:00 <redacted> kernel: [drm] add ip block number 4 <smu>
+2026-10-07T10:36:41-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Fetched VBIOS from ROM BAR
+2026-10-07T10:36:41-04:00 <redacted> kernel: amdgpu: ATOM BIOS: 115-D412BS2-100
+2026-10-07T10:36:41-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: Trusted Memory Zone (TMZ) feature disabled as experimental (default)
+2026-10-07T10:36:43-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: STB initialized to 2048 entries
+2026-10-07T10:36:43-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: smu driver if version = 0x00000040, smu fw if version = 0x00000041, smu fw program = 0, version = 0x003a5900 (58.89.0)
+2026-10-07T10:36:43-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: use vbios provided pptable
+2026-10-07T10:36:43-04:00 <redacted> kernel: amdgpu 0000:09:00.0: amdgpu: SMU is initialized successfully!
+2026-10-07T10:36:43-04:00 <redacted> kernel: [drm] Initialized amdgpu 3.57.0 20150101 for 0000:09:00.0 on minor 1
+2026-10-07T22:41:30-04:00 <redacted> kernel: workqueue: svm_range_deferred_list_work [amdgpu] hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+2026-10-07T23:09:22-04:00 <redacted> kernel: workqueue: svm_range_deferred_list_work [amdgpu] hogged CPU for >10000us 8 times, consider switching to WQ_UNBOUND
+2026-10-07T23:36:17-04:00 <redacted> kernel: workqueue: svm_range_deferred_list_work [amdgpu] hogged CPU for >10000us 16 times, consider switching to WQ_UNBOUND
+2026-10-08T10:14:25-04:00 <redacted> kernel: workqueue: svm_range_deferred_list_work [amdgpu] hogged CPU for >10000us 32 times, consider switching to WQ_UNBOUND
+2026-10-08T10:50:50-04:00 <redacted> kernel: workqueue: amdgpu_amdkfd_restore_userptr_worker [amdgpu] hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+2026-10-08T10:52:17-04:00 <redacted> kernel: workqueue: amdgpu_amdkfd_restore_userptr_worker [amdgpu] hogged CPU for >10000us 8 times, consider switching to WQ_UNBOUND

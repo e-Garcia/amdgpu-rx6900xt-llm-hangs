@@ -1,0 +1,9 @@
+core*
+*.dmp
+vmcore*
+*devcoredump*
+*.gguf
+*.bin
+raw/
+results/
+tools/private-words.local

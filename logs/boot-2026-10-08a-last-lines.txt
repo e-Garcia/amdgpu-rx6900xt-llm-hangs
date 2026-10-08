@@ -1,0 +1,5 @@
+2026-10-08T11:05:38-04:00 <redacted> firmware-updater.firmware-notifier[913217]: <asynchronous suspension>
+2026-10-08T11:05:38-04:00 <redacted> firmware-updater.firmware-notifier[913217]: #4      main (file:///build/firmware-updater/parts/firmware-notifier/build/apps/firmware_notifier/bin/firmware_notifier.dart:8)
+2026-10-08T11:05:38-04:00 <redacted> firmware-updater.firmware-notifier[913217]: <asynchronous suspension>
+2026-10-08T11:05:38-04:00 <redacted> systemd[2356]: snap.firmware-updater.firmware-notifier.service: Main process exited, code=exited, status=255/EXCEPTION
+2026-10-08T11:05:38-04:00 <redacted> systemd[2356]: snap.firmware-updater.firmware-notifier.service: Failed with result 'exit-code'.
