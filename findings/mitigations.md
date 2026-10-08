@@ -9,7 +9,7 @@ Each is tested alone, re-running `repro/` with `--n-cpu-moe 8` at 136K.
 | 3 | Match SMU interface | newer kernel (Ubuntu HWE 6.11+/6.14+) | untested |
 | 4 | ASPM off | `pcie_aspm=off amdgpu.aspm=0` | untested |
 | 5 | Stop userspace SMU polling during inference | pause `rocm-smi`/metrics pollers | untested |
-| 6 | Stop streaming expert weights to the GPU during prompt reads | llama-server `--no-op-offload` | **no hang so far** (485K+ fresh offloaded tokens, GFXOFF also off): [no-op-offload.md](no-op-offload.md) |
+| 6 | Stop streaming expert weights to the GPU during prompt reads | llama-server `--no-op-offload` | **no hang** (~835K fresh offloaded prompt tokens, 7 reads up to 193K; GFXOFF also off): [no-op-offload.md](no-op-offload.md) |
 | — | Already active, did **not** prevent it | `noretry=0`, `runpm=0`, `reset_method=1`, `gpu_recovery=1`, `lockup_timeout=10000`, -40 mV undervolt, `snd_hda_intel power_save=0` | — |
 
 Crash capture to set up before testing: `netconsole` to another host, `kernel.softlockup_panic=1`,

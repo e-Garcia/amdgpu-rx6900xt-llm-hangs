@@ -1,4 +1,4 @@
-# Test 6: `--no-op-offload` (no hang so far)
+# Test 6: `--no-op-offload` (no hang; soak passed)
 
 **Hypothesis:** the trigger is the host→GPU weight streaming that llama.cpp does while reading prompts with
 `--n-cpu-moe`. For large batches (prompt chunks of `-ub` 512 tokens), the scheduler "offloads" operations of CPU-resident
@@ -20,7 +20,8 @@ ever hung. `--no-op-offload` makes the CPU compute those layers itself, so no we
 | 136K | 512 tok/s | 208K |
 | 173K | 468 tok/s | 381K (incident 5 hung after ~330K) |
 | 105K | 558 tok/s | 485K |
-| more | soak in progress | — |
+| 157K | 485 tok/s | 642K |
+| 193K | 446 tok/s | **835K, no hang** |
 
 **Cost:** prompt reading runs at ~470–560 tok/s instead of ~730–1060 tok/s with op-offload. Generation speed is unchanged.
 
