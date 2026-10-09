@@ -5,8 +5,9 @@ whole Linux host down** while llama.cpp (HIP/ROCm) reads a long prompt with Mixt
 partly offloaded to the CPU (`--n-cpu-moe N`). After each hang the card **disappears from the PCI bus** until an
 AC power cycle (`reboot` is not enough).
 
-**Status:** open, root cause unconfirmed. 3 incidents (2026-09-30, 2026-10-08 ×2). Mitigations not yet tested
-([findings/mitigations.md](findings/mitigations.md)).
+**Status:** open, root cause unconfirmed. 6 incidents (2026-09-30, 2026-10-08 ×5). The sixth hung with **all weights on the
+GPU** (no offload), so offload is a strong trigger but not the only one. Mitigation matrix:
+[findings/mitigations.md](findings/mitigations.md).
 
 ## Signature
 
@@ -26,9 +27,10 @@ At every boot: `smu driver if version = 0x00000040, smu fw if version = 0x000000
 | 3 | 2026-10-08 12:13 | same as #2, clean boot | ~90K of 136K |
 | 4 | 2026-10-08 15:33 | same, clocks pinned `high`; first stuck SMU msg `0x28` AllowGfxOff | early in a 67K prompt |
 | 5 | 2026-10-08 16:36 | same, GFXOFF disabled (`ppfeaturemask=0xffff7fff`); silent, no SMU line | ~105K of 172K, after ~330K offloaded tokens passed |
+| 6 | 2026-10-08 21:55 | same model, **`--n-cpu-moe 0` (all on GPU)**, 160K ctx, GFXOFF still disabled; silent | ~76K of ~117K, after agent tasks + 5 long reads |
 
-**Never hung:** dozens of long prompts read **fully on the GPU** (no `--n-cpu-moe`), up to 198K tokens
-(Qwen3.6) and 247K (Bonsai 27B), the same day, on the same host and driver. Short offloaded requests were also fine.
+**Full GPU:** dozens of long prompts read fully on the GPU, up to 198K tokens (Qwen3.6) and 247K (Bonsai 27B), never
+hung **while GFXOFF was enabled**. With GFXOFF disabled, a full-GPU run hung (incident 6). Short offloaded requests were fine.
 Details in [findings/pattern.md](findings/pattern.md).
 
 ## Repo layout
@@ -48,7 +50,7 @@ Details in [findings/pattern.md](findings/pattern.md).
 Add **`--no-op-offload`** to llama-server whenever you use `--n-cpu-moe` / `-ot` CPU offload on this card. With it, the
 same config read ~835K tokens of fresh long prompts (7 reads up to 193K) without a hang, against 5/5 hangs without it, at
 about half the prompt-read speed. A heavily offloaded 125B-A6B MoE (`--n-cpu-moe 46`, the config that hung on 09-30)
-also passed fresh 5K–136K prompt reads with it, at ~2.5× slower prompt reading. Details: [findings/no-op-offload.md](findings/no-op-offload.md).
+also passed fresh 5K–136K prompt reads with it, at ~2.5× slower prompt reading. **It is not a complete fix:** incident 6 hung with no offload at all. Details: [findings/no-op-offload.md](findings/no-op-offload.md).
 
 ## If you have a Navi 21 card
 

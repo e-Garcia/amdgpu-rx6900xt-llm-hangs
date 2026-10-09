@@ -1,0 +1,9 @@
+Oct 08 21:55:01.216470 host CRON[279584]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Oct 08 21:55:01.216925 host CRON[279585]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 08 21:55:01.218919 host CRON[279584]: pam_unix(cron:session): session closed for user root
+Oct 08 21:55:26.019777 host ollama[2728]: [GIN] 2026/10/08 - 21:55:26 | 200 |      34.692µs |       127.0.0.1 | GET      "/api/version"
+Oct 08 21:55:27.230495 host ollama[2728]: [GIN] 2026/10/08 - 21:55:27 | 200 |  1.210089715s |       127.0.0.1 | GET      "/api/tags"
+Oct 08 21:55:27.231291 host ollama[2728]: [GIN] 2026/10/08 - 21:55:27 | 200 |        7.44µs |       127.0.0.1 | GET      "/api/ps"
+Oct 08 21:55:56.022814 host ollama[2728]: [GIN] 2026/10/08 - 21:55:56 | 200 |      36.101µs |       127.0.0.1 | GET      "/api/version"
+Oct 08 21:55:57.200736 host ollama[2728]: [GIN] 2026/10/08 - 21:55:57 | 200 |  1.177383416s |       127.0.0.1 | GET      "/api/tags"
+Oct 08 21:55:57.201518 host ollama[2728]: [GIN] 2026/10/08 - 21:55:57 | 200 |        6.49µs |       127.0.0.1 | GET      "/api/ps"

@@ -1,0 +1,1 @@
+Boot after hang 6 (21:56:40): kernel lines mentioning amdgpu = 1, PCI device 0000:09:00.0 enumerated = 0 (both lines that mention amdgpu are the kernel command line). Card absent until the AC power cycle; next boot 09:13:53 initialized the SMU normally.
