@@ -1,4 +1,4 @@
-# Test 6: `--no-op-offload` (no hang; soak passed)
+# `--no-op-offload` (tests 6–7: no hang)
 
 **Hypothesis:** the trigger is the host→GPU weight streaming that llama.cpp does while reading prompts with
 `--n-cpu-moe`. For large batches (prompt chunks of `-ub` 512 tokens), the scheduler "offloads" operations of CPU-resident
@@ -30,3 +30,19 @@ ever hung. `--no-op-offload` makes the CPU compute those layers itself, so no we
 - Does a smaller `-ub` with op-offload on (smaller DMA bursts) also avoid it?
 
 Reproduce: `repro/serve.sh 204800 8 --no-op-offload` (extra args are passed to llama-server).
+
+## Test 7: heavy offload (`--n-cpu-moe 46`, 125B-A6B MoE) with `--no-op-offload`
+
+The service that hung on 2026-09-30 (at ~56K tokens into a prompt read, op-offload on) was re-tested with
+`--no-op-offload`. Text-only fresh prompts, GFXOFF still disabled, all checks passed every time:
+
+| Prompt (fresh) | Prompt read | Time to first token | Generation |
+|---|---|---|---|
+| 5K | 33 tok/s (startup-dominated) | 150 s | 16.2 tok/s |
+| 30K | 85 tok/s | 5.8 min | 16.4 tok/s |
+| 59K | 82 tok/s | 12.0 min | 16.0 tok/s |
+| 99K | 78.5 tok/s | 21.1 min | 14.8 tok/s |
+| 136K | 76.5 tok/s | 29.6 min | 13.8 tok/s |
+
+~330K offloaded prompt tokens, **no hang**. Cost: prompt reading ~2.5× slower than with op-offload (~195 tok/s), because
+with most experts on the CPU the CPU does all expert work for prompt chunks. Generation speed is unchanged.
